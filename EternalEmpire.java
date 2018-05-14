@@ -31,6 +31,7 @@ public class EternalEmpire extends Application {
 
 		Media sound = new Media(new File("Title_Screen.mp3").toURI().toString());
 		mediaPlayer = new MediaPlayer(sound);
+		mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
 		
 		final double CANVAS_WIDTH = 1920;
 		final double CANVAS_HEIGHT = 980;
@@ -64,6 +65,7 @@ public class EternalEmpire extends Application {
 		
 		Media sound2 = new Media(new File("Town.mp3").toURI().toString());
 		mediaPlayer2 = new MediaPlayer(sound2);
+		mediaPlayer2.setCycleCount(MediaPlayer.INDEFINITE);
 		
 	    final ImageView flashScreen_node2 = new ImageView();
 		flashScreen_node2.setImage(village);
